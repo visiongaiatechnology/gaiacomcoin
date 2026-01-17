@@ -23,6 +23,16 @@ GCC implementiert eine kompromisslose "Defense in Depth" Strategie gegen Quanten
 * C-Compiler (gcc/clang) für PQ-Crypto Bindings
 * OpenSSL dev libs
 
+
+🗺 Roadmap Status
+[x] Phase 1: Zero Point (Core Architecture, Hybrid Crypto)
+
+[x] Phase 2: The Network (P2P Protocol, Binary Wire Format)
+
+[x] Phase 3: The Consensus (VGT-Matrix Mining, Chainstate Persistence)
+
+[ ] Phase 4: Mainnet Launch (Active Peer Discovery, Governance Activation, Audit)
+
 ### Installation
 ```bash
 git clone [https://github.com/VisionGaiaTechnology/gcc-core.git](https://github.com/VisionGaiaTechnology/gcc-core.git)
@@ -40,11 +50,4 @@ Bash
 
 ./target/release/gcc_node --p2p-port 8334 --api-port 8081 --connect 127.0.0.1:8333
 
-🗺 Roadmap Status
-[x] Phase 1: Zero Point (Core Architecture, Hybrid Crypto)
 
-[x] Phase 2: The Network (P2P Protocol, Binary Wire Format)
-
-[x] Phase 3: The Consensus (VGT-Matrix Mining, Chainstate Persistence)
-
-[ ] Phase 4: Mainnet Launch (Active Peer Discovery, Governance Activation, Audit)
