@@ -1,162 +1,124 @@
-# GAIA COM COIN – LICENSE PROTOCOL
+# GAIACOMCOIN (GCC) – LICENSE PROTOCOL
 
-Version 1.0
+Version 1.2
 Copyright © VisionGaiaTechnology
 
 ---
 
 ## 1. Overview
 
-This repository uses a **multi-license structure** to balance:
+This repository uses a **layered licensing model**.
 
-* Open-source collaboration
-* Security, auditability, and trust
-* Protection of governance, tokenomics, and ethical foundations
+Core protocol infrastructure is open-source to ensure transparency,
+auditability, and decentralization.
 
-Different parts of the codebase are licensed under different licenses, as described below.
-
-This approach is intentional and aligned with best practices for critical protocol infrastructure.
-
----
-
-## 2. License Matrix
-
-| Component                      | Path          | License                     |
-| ------------------------------ | ------------- | --------------------------- |
-| Core protocol logic            | `/core`       | Apache License 2.0          |
-| Cryptography                   | `/crypto`     | Apache License 2.0          |
-| Networking (P2P)               | `/net`        | Apache License 2.0          |
-| Consensus engine               | `/consensus`  | Apache License 2.0          |
-| Governance & voting logic      | `/governance` | Business Source License 1.1 |
-| Tokenomics & monetary policy   | `/tokenomics` | Business Source License 1.1 |
-| Documentation & specifications | `/docs`       | Creative Commons BY-SA 4.0  |
-| Scripts & tooling              | `/scripts`    | MIT License                 |
-
-Each directory contains its own `LICENSE` file with the applicable terms.
+Governance and monetary control logic are protected to prevent
+extraction, misuse, or hostile forks that undermine the protocol’s
+ethical foundations.
 
 ---
 
-## 3. Apache License 2.0
+## 2. Current License Scope (Present State)
 
-### (Core Protocol, Crypto, Networking, Consensus)
+The following existing modules are licensed under the **Apache License 2.0**:
 
-The following components are licensed under the **Apache License, Version 2.0**:
+* `/gcc_core`
+* `/gcc_crypto`
+* `/gcc_net`
+* `/gcc_consensus`
+* `/gcc_node`
+* `/gcc_api`
+* `/gcc_script`
+* `/gcc_wasm`
 
-* Core protocol implementation
-* Cryptographic primitives and integrations
-* Peer-to-peer networking stack
-* Consensus and validation logic
+These modules constitute **technical protocol infrastructure only**.
 
-The Apache License 2.0 grants:
+Apache License 2.0 grants:
 
 * Free use, modification, and distribution
 * Commercial use
-* Explicit patent grant and protection
+* Explicit patent grant and patent retaliation protection
 
 Full license text:
 [https://www.apache.org/licenses/LICENSE-2.0](https://www.apache.org/licenses/LICENSE-2.0)
 
 ---
 
-## 4. Business Source License 1.1
+## 3. Reserved License Scope (Governance & Tokenomics)
 
-### (Governance & Tokenomics)
-
-The following components are licensed under the **Business Source License (BSL) 1.1**:
+Any present or future modules implementing:
 
 * Governance mechanisms
-* Voting logic
-* Vesting, allocation, and token distribution logic
+* Voting systems
+* Treasury logic (e.g. Humans Wallet)
+* Token allocation, vesting, or monetary policy
 
-### License Parameters
+including but not limited to directories such as:
+
+* `/gcc_governance`
+* `/gcc_tokenomics`
+* `/gcc_humans_wallet`
+
+are licensed under the **Business Source License (BSL) 1.1**.
+
+### BSL Parameters
 
 * **Licensor:** VisionGaiaTechnology
-* **Licensed Work:** GaiaComCoin Governance & Tokenomics Modules
-* **Change Date:** 1 January 2029
 * **Change License:** Apache License 2.0
+* **Change Date:** 1 January 2029
 
 ### Use Limitation
 
-The Licensed Work **may not be used** to operate, launch, or govern a competing public blockchain, cryptocurrency, or token network without explicit written permission from the Licensor.
-
-After the Change Date, this code will automatically become available under the Apache License 2.0.
-
-Full license text:
-[https://mariadb.com/bsl11/](https://mariadb.com/bsl11/)
+The BSL-licensed components may not be used to operate,
+launch, or govern a competing public blockchain or token network
+without explicit written permission.
 
 ---
 
-## 5. Creative Commons Attribution-ShareAlike 4.0
+## 4. Documentation License
 
-### (Documentation)
+All documentation, specifications, and PDFs, including:
 
-All documentation, specifications, and written materials located in `/docs` are licensed under:
+* `GaiaComCoin Genesis Blueprint.pdf`
 
-**Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)**
+are licensed under:
 
-You are free to:
-
-* Share
-* Adapt
-
-Under the conditions that:
-
-* Proper attribution is given
-* Derivative works are shared under the same license
-
-Full license text:
-[https://creativecommons.org/licenses/by-sa/4.0/](https://creativecommons.org/licenses/by-sa/4.0/)
+**Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0)**
 
 ---
 
-## 6. MIT License
+## 5. Trademark & Naming Policy
 
-### (Scripts & Tooling)
-
-All helper scripts and development tools located in `/scripts` are licensed under the **MIT License**.
-
-This allows unrestricted use with minimal obligations.
-
----
-
-## 7. Trademark & Naming Policy
-
-The following names and identifiers are **not licensed under open-source terms**:
+The following identifiers are NOT licensed:
 
 * GaiaComCoin
 * GCC
 * VisionGaiaTechnology
-* All associated logos and branding
 
-Forks and derivative works may not:
-
-* Use the name “GaiaComCoin” or “GCC”
-* Present themselves as the official network
-* Use VisionGaiaTechnology branding
-
-without explicit written permission.
-
-This policy applies regardless of the software license used.
+Forks may not present themselves as the official network
+or use these names without permission.
 
 ---
 
-## 8. Disclaimer of Warranty
+## 6. Disclaimer of Warranty & Liability
 
-Unless required by applicable law or agreed to in writing, all software is provided **“AS IS”**, without warranties or conditions of any kind, express or implied.
+The software is provided **“AS IS”**, without warranty of any kind.
 
-The Licensor shall not be liable for any damages arising from the use of this software.
+No liability is assumed for:
+
+* Bugs
+* Exploits
+* Loss of funds
+* Economic damage
+
+Use at your own risk.
 
 ---
 
-## 9. Final Notes
+## 7. No Financial or Legal Advice
 
-This license structure is designed to:
-
-* Encourage transparency and collaboration
-* Protect the ethical and governance foundations of the protocol
-* Enable long-term sustainability and trust
-
-Questions regarding licensing or permissions may be directed to VisionGaiaTechnology.
+Nothing in this repository constitutes financial, legal,
+or investment advice.
 
 ---
 
