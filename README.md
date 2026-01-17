@@ -9,6 +9,10 @@
 **WARNUNG:** Dies ist eine **Phase 3 Beta (Testnet)** Implementierung.  
 Die kryptographischen Primitive (Kyber1024/Dilithium5) sind sicherheitstechnisch scharf geschaltet, aber das Netzwerk-Peering erfordert manuelle Konfiguration. Nutzen Sie dies NICHT für Echtwert-Transaktionen.
 
+<img width="1892" height="1900" alt="Picsart_26-01-18_00-55-47-733" src="https://github.com/user-attachments/assets/7de5c288-5bc1-457e-b739-9d2e771fe79a" />
+
+
+
 ## 🏛 Architecture: The Hybrid Shield
 GCC implementiert eine kompromisslose "Defense in Depth" Strategie gegen Quantencomputer-Bedrohungen:
 * **KEM:** X25519 + Kyber1024 (Hybrid Handshake)
